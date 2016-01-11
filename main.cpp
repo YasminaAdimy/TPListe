@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include "Node.h"
 #include "Vector.h"
+#include "Liste.h"
 int main(int argc, char* argv[]){
   std::cout<<"Hello"<<std::endl;
   Vector v1(1,2);
@@ -12,5 +13,6 @@ int main(int argc, char* argv[]){
   
   n1.set_next(&n2);
   std::cout<<n2.v()<<std::endl;
+  Liste l();
   return EXIT_SUCCESS;
 }

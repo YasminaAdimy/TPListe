@@ -1,5 +1,8 @@
 #include "Vector.h"
 
+
+#ifndef NODE_H
+#define NODE_H
 class Node{
   protected : 
     Node* next_;//adresse de l'objet suivant
@@ -18,3 +21,5 @@ class Node{
   //Detructor
     ~Node();
 };
+
+#endif

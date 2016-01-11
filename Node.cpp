@@ -7,6 +7,7 @@ Node::Node(Vector v){
   v_= new Vector(v);
   next_=nullptr;
 }
+
 /*  
 //constructeur par copie
 Node::Node(Node& obj){
