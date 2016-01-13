@@ -14,7 +14,8 @@ List:: List(){
 //constructeur par valeur
 List::List(Vector v){
   Vector* v_= new Vector(v);
-  Node head_(v);
+  Node n1(v);
+  head_=&n1;
   nb_elts_=1;
 }
 
@@ -30,8 +31,8 @@ int List::nb_elts(){
   return nb_elts_;
 };
 
-
 /*
+
 //methode insert
 void List::Insert(int indice, Vector v){
   Vector* v_= new Vector(v);
@@ -45,6 +46,4 @@ void List::Insert(int indice, Vector v){
   nb_elts_++;
 }
 
-
 */
-
