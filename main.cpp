@@ -14,6 +14,7 @@ int main(int argc, char* argv[]){
   n1.set_next(&n2);
   std::cout<<n2.v()<<std::endl;
   List l;
-  //List L(v1);
+  List L(v1);
+  std::cout<<L.nb_elts()<<std::endl;
   return EXIT_SUCCESS;
 }

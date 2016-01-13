@@ -25,12 +25,16 @@ List::List(Vector v){
 List::~List(){
 };
 
-
+//Getter
+int List::nb_elts(){
+  return nb_elts_;
+};
 
 
 /*
 //methode insert
-void List::Insert(int indice, Node* el){
+void List::Insert(int indice, Vector v){
+  Vector* v_= new Vector(v);
   Node* cur= head_;
   for (i=0 ;i<indice; i++){
     cur=cur.next();
@@ -40,7 +44,7 @@ void List::Insert(int indice, Node* el){
   el.set_next(nextnext);
   nb_elts_++;
 }
+
+
 */
-
-
 

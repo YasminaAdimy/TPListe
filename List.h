@@ -11,6 +11,9 @@ class List{
     List();
     List(Vector v);
     
+  //Getter
+    int nb_elts();
+  
     
   //Method insert
     void Insert(int indice);
