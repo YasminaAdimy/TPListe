@@ -17,7 +17,8 @@ class Node{
     void set_vector(Vector& v);
   //Constructor
     Node(Vector v);
-    //Node(Node& obj)
+    Node() = delete;
+    Node(Node& obj) = delete;
   //Detructor
     ~Node();
 };

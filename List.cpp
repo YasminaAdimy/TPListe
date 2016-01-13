@@ -1,0 +1,46 @@
+#include "Node.h"
+#include "Vector.h"
+#include "List.h"
+#include <cstdio>
+
+
+//constructor par defaut
+List:: List(){
+  head_=nullptr;
+  nb_elts_=0;
+}
+
+
+//constructeur par valeur
+List::List(Vector v){
+  Vector* v_= new Vector(v);
+  Node head_(v);
+  nb_elts_=1;
+}
+
+
+
+
+//destructeur
+List::~List(){
+};
+
+
+
+
+/*
+//methode insert
+void List::Insert(int indice, Node* el){
+  Node* cur= head_;
+  for (i=0 ;i<indice; i++){
+    cur=cur.next();
+  }
+  Node* nextnext=cur.next();
+  cur.set_next(el);
+  el.set_next(nextnext);
+  nb_elts_++;
+}
+*/
+
+
+
