@@ -16,7 +16,7 @@ class List{
   
     
   //Method insert
-    void Insert(int indice);
+    void Insert(int indice, Vector v);
     
     
   //Detructor

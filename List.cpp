@@ -31,19 +31,20 @@ int List::nb_elts(){
   return nb_elts_;
 };
 
-/*
 
 //methode insert
 void List::Insert(int indice, Vector v){
   Vector* v_= new Vector(v);
-  Node* cur= head_;
-  for (i=0 ;i<indice; i++){
-    cur=cur.next();
+  Node el(v);
+  Node* cur=head_;
+  int i=0;
+  while (i<indice || (*cur).next()!= nullptr){
+    cur=(*cur).next();
+    i++;
   }
-  Node* nextnext=cur.next();
-  cur.set_next(el);
+  Node* nextnext=(*cur).next();
+  (*cur).set_next(&el);
   el.set_next(nextnext);
   nb_elts_++;
 }
 
-*/

@@ -15,6 +15,7 @@ int main(int argc, char* argv[]){
   std::cout<<n2.v()<<std::endl;
   List l;
   List L(v1);
+  L.Insert(0,v2);
   std::cout<<L.nb_elts()<<std::endl;
   return EXIT_SUCCESS;
 }
