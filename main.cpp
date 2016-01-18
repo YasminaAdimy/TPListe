@@ -8,6 +8,7 @@ int main(int argc, char* argv[]){
   std::cout<<"Hello"<<std::endl;
   Vector v1(1,2);
   Vector v2(5,8);
+  Vector v3(8,8);
   Node n1(v1);
   Node n2(v2);
   
@@ -15,7 +16,10 @@ int main(int argc, char* argv[]){
   std::cout<<n2.v()<<std::endl;
   List l;
   List L(v1);
-  L.Insert(0,v2);
+  L.PushBack(v1);
+  L.PushBack(v2);
+  L.Insert(1,v3);
+  
   std::cout<<L.nb_elts()<<std::endl;
   return EXIT_SUCCESS;
 }

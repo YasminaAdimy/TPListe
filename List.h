@@ -18,6 +18,10 @@ class List{
   //Method insert
     void Insert(int indice, Vector v);
     
+  //Methode pop back
+    void PopBack();
+    void PushBack(Vector v);  
+    
     
   //Detructor
     ~List();
